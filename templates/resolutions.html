@@ -8,23 +8,23 @@
             width: 80%;
             color: #fff;
             padding: 10%;
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Helvetica';
         }
 
-        .pink {
-            background-color: #e54164;
+        .purple {
+            background-color: #6600cc;
         }
 
-        .yellow {
-            background-color: #faa719;
+        .limegreen {
+            background-color: #00ff00;
         }
 
-        .lightblue {
-            background-color: #7acdcc;
+        .magenta {
+            background-color: #CC0066;
         }
 
-        .darkblue {
-            background-color: #1c2e41;
+        .teal {
+            background-color: #00CCFF;
         }
 
         #count {
@@ -74,7 +74,7 @@
         $( document ).ready(function() {
 
             // Page refresh every 30s
-            window.setTimeout(function () { location.reload(true) }, 30000);
+            window.setTimeout(function () { location.reload(true) }, 10000);
 
             // Rotate through all of the logos for host groups
             var showLogo = Math.floor(Math.random() * 100);
@@ -94,8 +94,8 @@
                 $("#resolution").addClass('logo-container');
             }
             else {
-                // Apply random background color class (.pink, .yellow, .lightblue, .darkblue) on load
-                var colors = ['pink', 'yellow', 'lightblue', 'darkblue'];
+                // Apply random background color class (.purple, .limegreen, .magenta, .teal) on load
+                var colors = ['purple', 'limegreen', 'magenta', 'teal'];
                 var color = colors[Math.floor(Math.random() * 4)];
                 $("body").addClass(color);
             }
